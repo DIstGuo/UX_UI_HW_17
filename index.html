@@ -17,58 +17,66 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <!-- Header -->
         <header>
-            <div class="inline-block logo">
+            <div class="logo">
                 <img src="images/logo.png" alt="Logo">
             </div>
-            <nav class="inline-block">
+            <nav>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="hamburger"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
             </nav>
         </header>
+
+        <!-- Hero Section -->
         <section class="hero">
             <div class="content">
                 <div>
-                    <div>
-                        <h1>
-                            Hello, I am a... <br>
-                            UX Designer <br>
-                            This is where storytelling and delightful user journey unveiled.
-                        </h1>
-                        <button>Download resume</button>
-                    </div>
-
+                    <h1 class="typography-heading hero-heading">
+                        Hello, I am a... <br>
+                        <span>UX Designer</span> <br>
+                        This is where storytelling and delightful user journey unveiled.
+                    </h1>
+                    <button class="begin"><p class="typography-label">Let's begin</p><i class="fa-solid fa-arrow-down"></i></button>
                 </div>
-                <img src="images/hero_image.png" alt="">
             </div>
+            <img src="images/hero_image.png" alt="">
         </section>
-        <nav class="main-nav">
+
+        <!-- Side Navigation -->
+        <nav class="side-nav">
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li class="scroll-to-about"><a>About</a></li>
+                <li class="scroll-to-skills"><a>Skills</a></li>
+                <li class="scroll-to-projects"><a>Projects</a></li>
+                <li class="scroll-to-contact"><a>Contact</a></li>
             </ul>
         </nav>
-        <footer>
+
+        <!-- Footer -->
+        <footer id="contact">
             <div class="contact-content">
-                <h1>Get in touch!</h1>
+                <h1 class="typography-heading">Get in touch!</h1>
                 <p>You can find my contact information below.</p>
                 <ul>
-                    <li><i class="fa-brands fa-linkedin"></i><span><a href="https://www.linkedin.com/in/rongda-yu/">Rongda Yu</a></span></li>
-                    <li><i class="fa-solid fa-phone"></i><span>+1 (647) 280-8118</span></li>
-                    <li><i class="fa-solid fa-envelope"></i><span>ryu.pro97@gmail.com</span></li>
+                    <li><i class="fa-brands fa-linkedin"></i><p class="typography-body"><a href="https://www.linkedin.com/in/rongda-yu/">Rongda Yu</a></p></li>
+                    <li><i class="fa-solid fa-phone"></i><p class="typography-body">+1 (647) 280-8118</p></li>
+                    <li><i class="fa-solid fa-envelope"></i><p class="typography-body">ryu.pro97@gmail.com</p></li>
                 </ul>
             </div>
-            <div>
+            <hr class="solid-hr">
+            <div class="social-links">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/rongda-yu/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-dribbble"></i></a></li>
                 </ul>
+                <span>Copyright 2023</span>
             </div>
         </footer>
+        <script src="https://kit.fontawesome.com/886f771802.js" crossorigin="anonymous"></script>
         <script src="" async defer></script>
     </body>
 </html>

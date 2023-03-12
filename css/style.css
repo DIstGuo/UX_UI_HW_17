@@ -1,36 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: auto;
+    background: #212125;
+    overflow-x: hidden;
 }
 
-.logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+/* Typographic Styles */
+
+.typography-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 700;
 }
 
-header nav {
-    width: 73%;
-    padding: 1%;
+.typography-label {
+    font-size: 1rem;
+    line-height:1.5;
+    font-weight: 600;
+}
+
+.typography-label-large {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.typography-title {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 700;
+}
+
+.body {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 500;
+}
+
+/* Globals */
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer; 
+    color: #D4D4D8;
+}
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0px;
+}
+
+h1 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin: 0px;
 }
 
 ul {
-    width: 50%;
     margin-left: auto;
+    list-style-type: none;
 }
+
+section {
+    max-width: 100%;
+    padding: 124px 128px;
+}
+
+section > div {
+    max-width: 100%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px 32px;
+    gap: 8px;
+    height: 56px;
+
+    background: linear-gradient(91.7deg, #566FC8 0.81%, #4E53D7 98.85%);
+    color: white;
+
+    border: none;
+    border-radius: 56px;
+
+    cursor: pointer;
+}
+
+i {
+    font-size: 24px;
+}
+
+.solid-hr {
+    width: 100%;
+    border-top: 1px solid #D4D4D8;
+}
+
+/* Header */
+
+header {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 112px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    background: rgba(33, 33, 37, 0.5);
+    backdrop-filter: blur(22.5px);
+
+    flex: none;
+    order: 7;
+    flex-grow: 0;
+    z-index: 7;
+}
+
+header .logo,
+header nav {
+    padding: 32px 128px;
+}
+
+.logo {
+    width: 168px;
+    height: 48px;
+    text-align: center;
+}
+
+/* Side Navigation */
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+
+    position: fixed;
+    width: 66px;
+    height: 288px;
+    right: 88px;
+    top: calc((100vh - 288px) / 2);
+
+    z-index: 100;
+}
+
+.side-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.side-nav li {
+    height: 48px;
+}
+
+.side-nav a {
+    height: 48px;
+}
+
+/* Hero */
 
 .hero {
-    height: 600px;
-    padding: 25px;
+    padding: 256px 128px 144px;
+    position: relative;
+    color: white;
 }
 
+.hero .content {
+    position: relative;
+    width: 681px;
+    z-index: 2;
+}
+
+.hero .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+}
+
+.hero img {
+    position: absolute;
+    width: 682.75px;
+    height: 682.75px;
+    left: 320px;
+    top: 80px;
+    z-index: 1;
+}
+
+.hero-heading span {
+    color: #8185FF;
+}
+
+/* Footer */
+
 footer {
-    background-color: #373738;
+    max-width: 100%;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 124px 128px;
+    gap: 80px;
 }
 
 footer ul {
     display: inline-block;
     vertical-align: top;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
+
+    width: 100%;
+}
+
+.social-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    gap: 32px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+}
+
+.contact-content ul {
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.contact-content ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+footer a {
+    color: #42434A;
 }
